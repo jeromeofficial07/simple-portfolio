@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of A. Arputha Jerome - Aspiring Python Full-Stack Developer.">
+  <title>A. Arputha Jerome | Python Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ultra-Minimal Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scrollProgress" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <!-- Motion Spotlight Follower -->
+  <div class="cursor-spotlight" id="cursorSpotlight" aria-hidden="true"></div>
+
+  <!-- TOP NAVIGATION -->
+  <header class="nav-header">
+    <nav class="nav" aria-label="Main Navigation">
+      <!-- Left: Availability Status Pill -->
+      <div class="nav-status-pill">
+        <span class="pulse-dot"></span>
+        <span>Available for New Projects</span>
+      </div>
+
+      <!-- Center: Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="#work">Work</a>
+        <a href="#process">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Right: Let's Talk CTA & Mobile Menu Toggle -->
+      <div class="nav-end">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="nav-talk-btn magnetic" href="#contact">
+          <span>Let's Talk</span>
+          <svg class="nav-talk-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PANEL 1: PURE EDITORIAL MINIMALIST HERO -->
+    <div class="panel panel--light panel--first">
+      <section class="hero-showcase section" id="hero">
+        <!-- Giant Typographic Name Layered Behind Subject -->
+        <div class="hero-giant-typography" aria-hidden="true">
+          <span class="giant-outline hero-reveal-text">ARPUTHA</span>
+          <span class="giant-solid hero-reveal-text">JEROME</span>
+        </div>
+
+        <!-- Main Central Portrait Cutout (Foreground Subject) -->
+        <div class="hero-center-portrait-wrap hero-reveal-img" id="heroPortraitWrap">
+          <img src="assets/hero-portrait-editorial.png" alt="A. Arputha Jerome" class="hero-center-portrait-img" id="heroPortraitImg">
+        </div>
+
+        <!-- Left Introduction: Role, Tagline, Collaborative CTA & Resume -->
+        <div class="hero-bottom-left hero-reveal-left">
+          <h2 class="hero-role-title">Full Stack Developer</h2>
+          <p class="hero-role-desc">
+            I build reliable digital experiences and scalable systems that solve real problems.
+          </p>
+          <div class="hero-role-actions">
+            <a class="btn-collaborate magnetic" href="#contact">
+              <span>Let's Collaborate</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+            <a class="btn-resume-pill magnetic hero-resume-link" href="resume.html">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              <span>Resume ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Social Links: Vertically Stacked Pill Buttons -->
+        <div class="hero-bottom-right hero-reveal-right">
+          <a class="social-side-pill magnetic" href="resume.html" target="_blank" rel="noreferrer">
+            <svg class="brand-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            <span>Resume</span>
+          </a>
+          <a class="social-side-pill magnetic" href="https://www.linkedin.com/in/arputha-jerome/" target="_blank" rel="noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a class="social-side-pill magnetic" href="https://github.com/jeromeofficial07" target="_blank" rel="noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a class="social-side-pill magnetic" href="mailto:jeromeofficial07@gmail.com">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>Email</span>
+          </a>
+          <a class="social-side-pill social-side-pill--resume magnetic hero-resume-link" href="resume.html">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <span>Resume ↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- INFINITE ANIMATED TECH MARQUEE STRIP -->
+      <div class="marquee-strip" aria-hidden="true">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" class="marquee-img-icon">PYTHON</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="" class="marquee-img-icon">FLASK FRAMEWORK</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" class="marquee-img-icon">REACT</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" class="marquee-img-icon">JAVASCRIPT</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" class="marquee-img-icon">MYSQL & POSTGRESQL</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="" class="marquee-img-icon">REST APIS</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" alt="" class="marquee-img-icon">SQLALCHEMY</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" class="marquee-img-icon">GIT & GITHUB</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="" class="marquee-img-icon">CLOUD DEPLOYMENT</span><span class="marquee-star">✦</span>
+          </div>
+          <div class="marquee-group" aria-hidden="true">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" class="marquee-img-icon">PYTHON</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="" class="marquee-img-icon">FLASK FRAMEWORK</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" class="marquee-img-icon">REACT</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" class="marquee-img-icon">JAVASCRIPT</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" class="marquee-img-icon">MYSQL & POSTGRESQL</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="" class="marquee-img-icon">REST APIS</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" alt="" class="marquee-img-icon">SQLALCHEMY</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" class="marquee-img-icon">GIT & GITHUB</span><span class="marquee-star">✦</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="" class="marquee-img-icon">CLOUD DEPLOYMENT</span><span class="marquee-star">✦</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANEL 2: DARK CANVAS CROSS SECTION (ABOUT ME) -->
+    <div class="panel panel--dark">
+      <!-- ABOUT ME SECTION -->
+      <section class="section about-section" id="about">
+        <div class="section-header reveal">
+          <span class="section-tag">PROFESSIONAL SUMMARY</span>
+          <h2>ABOUT ME</h2>
+          <p class="section-subtitle-tagline">Engineering purposeful web systems with strategic foresight.</p>
+        </div>
+
+        <div class="about-card reveal">
+          <div class="about-text">
+            <p class="lead">
+              Full Stack Developer with hands-on internship experience in developing responsive web applications using HTML, CSS, JavaScript, React, Python, Flask, and SQL.
+            </p>
+            <p>
+              Experienced in building practical applications including a Smart Queue Management System, College Student Election Polling & Management System, and an E-Commerce platform. Strong foundation in frontend component design, backend API engineering, relational database management, and agile problem solving.
+            </p>
+            <p>
+              Like a chess player evaluating every move on the board, I approach software development with strategic foresight—planning normalized database schemas, architecting clean RESTful APIs, and refining user interfaces so every element serves a purposeful user outcome.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PANEL 3: LIGHT CANVAS CROSS SECTION (TECHNICAL SKILLS) -->
+    <div class="panel panel--light">
+      <section class="section skills-section" id="skills">
+        <div class="section-header reveal">
+          <span class="section-tag">CAPABILITIES</span>
+          <h2>TECHNICAL SKILLS</h2>
+        </div>
+
+        <div class="skills-grid reveal">
+          <div class="skill-card" style="--brand-glow: rgba(55, 118, 171, 0.45);">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" class="skill-img-icon" loading="lazy">
+            <h4>Python</h4>
+            <p>Core Language & OOP</p>
+          </div>
+          <div class="skill-card" style="--brand-glow: rgba(255, 255, 255, 0.35);">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask logo" class="skill-img-icon" loading="lazy">
+            <h4>Flask</h4>
+            <p>Backend Web Framework</p>
+          </div>
+          <div class="skill-card" style="--brand-glow: rgba(247, 223, 30, 0.45);">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" class="skill-img-icon" loading="lazy">
+            <h4>JavaScript</h4>
+            <p>Frontend Scripting & DOM</p>
+          </div>
+          <div class="skill-card" style="--brand-glow: rgba(227, 76, 38, 0.4);">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 logo" class="skill-img-icon" loading="lazy">
+            <h4>HTML5</h4>
+            <p>Semantic Structure</p>
+          </div>
+          <div class="skill-card" style="--brand-glow: rgba(38, 77, 228, 0.45);">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 logo" class="skill-img-icon" loading="lazy">
+            <h4>CSS3</h4>
+            <p>Flexbox, Grid & Animations</p>
+          </div>
+          <div class="skill-card" style="--brand-glow: rgba(0, 59, 87, 0.4);">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQL Database logo" class="skill-img-icon" loading="lazy">
+            <h4>SQL</h4>
+            <p>Relational Database Queries</p>
+          </div>
+          <div class="skill-card" style="--brand-glow: rgba(0, 117, 143, 0.45);">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL logo" class="skill-img-icon" loading="lazy">
+            <h4>MySQL</h4>
+            <p>Database Administration</p>
+          </div>
+          <div class="skill-card" style="--brand-glow: rgba(51, 103, 145, 0.45);">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL logo" class="skill-img-icon" loading="lazy">
+            <h4>PostgreSQL</h4>
+            <p>Enterprise Relational DB</p>
+          </div>
+          <div class="skill-card" style="--brand-glow: rgba(215, 28, 0, 0.4);">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" alt="SQLAlchemy logo" class="skill-img-icon" loading="lazy">
+            <h4>SQLAlchemy</h4>
+            <p>Python ORM</p>
+          </div>
+          <div class="skill-card" style="--brand-glow: rgba(255, 108, 55, 0.45);">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="REST APIs / Postman logo" class="skill-img-icon" loading="lazy">
+            <h4>REST APIs</h4>
+            <p>Endpoint Architecture</p>
+          </div>
+          <div class="skill-card" style="--brand-glow: rgba(240, 80, 50, 0.45);">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo" class="skill-img-icon" loading="lazy">
+            <h4>Git</h4>
+            <p>Version Control System</p>
+          </div>
+          <div class="skill-card" style="--brand-glow: rgba(255, 255, 255, 0.35);">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub logo" class="skill-img-icon" loading="lazy">
+            <h4>GitHub</h4>
+            <p>Code Repository & CI/CD</p>
+          </div>
+          <div class="skill-card" style="--brand-glow: rgba(97, 218, 251, 0.5);">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React logo" class="skill-img-icon" loading="lazy">
+            <h4>React</h4>
+            <p>Component UI & Hooks</p>
+          </div>
+          <div class="skill-card" style="--brand-glow: rgba(0, 122, 204, 0.45);">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code logo" class="skill-img-icon" loading="lazy">
+            <h4>VS Code</h4>
+            <p>IDE & Extensions</p>
+          </div>
+          <div class="skill-card highlight-card" style="--brand-glow: rgba(252, 202, 38, 0.45);">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux & Render Cloud Deployment logo" class="skill-img-icon" loading="lazy">
+            <h4>Deployment</h4>
+            <p>Render & Cloud Hosting</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PANEL 4: DARK CANVAS CROSS SECTION (SELECTED WORK WITH IMAGE FLIP BUTTONS) -->
+    <div class="panel panel--dark">
+      <section class="section work-section" id="work">
+        <div class="section-header reveal">
+          <span class="section-tag">PORTFOLIO</span>
+          <h2>SELECTED WORK</h2>
+          <p class="section-instruction">Click the project image to flip and reveal Live Demo & GitHub buttons 🔄</p>
+        </div>
+
+        <div class="projects-list">
+          <!-- PROJECT 01 -->
+          <article class="project-card-layout reveal">
+            <div class="project-details-side">
+              <div class="project-meta-row">
+                <span class="project-number">01</span>
+                <span class="project-meta-tag">FEATURED PROJECT</span>
+              </div>
+              <h3>SMART QUEUE</h3>
+              <p class="project-subtitle">Hospital Queue Management System</p>
+
+              <div class="project-details-grid">
+                <div class="detail-box">
+                  <strong>Problem</strong>
+                  <p>Long wait times and overcrowding in hospital waiting rooms caused by manual queue management.</p>
+                </div>
+                <div class="detail-box">
+                  <strong>Solution</strong>
+                  <p>An automated token generation system with live digital status displays and admin control panel.</p>
+                </div>
+                <div class="detail-box">
+                  <strong>Key Features</strong>
+                  <p>Token generation, real-time queue tracking, admin counter management, and responsive patient UI.</p>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>MySQL</span>
+                <span>JavaScript</span>
+                <span>CSS3</span>
+                <span>REST API</span>
+              </div>
+              <div class="project-impact-box">
+                <span class="impact-label">⚡ Key Impact:</span>
+                <span>Reduced simulated wait times by ~40% through automated token sequencing and real-time live queue board updates.</span>
+              </div>
+            </div>
+
+            <!-- PROJECT IMAGE CARD WITH FLIP DEMO BUTTON -->
+            <div class="project-image-side">
+              <div class="image-flip-card" tabindex="0" role="button" aria-label="Click image to reveal demo links for Smart Queue">
+                <div class="image-flip-inner">
+                  <!-- FRONT: PROJECT SCREENSHOT / IMAGE -->
+                  <div class="image-flip-front">
+                    <div class="image-overlay">
+                      <span class="flip-click-hint">Click Image to Open Links 🔄</span>
+                    </div>
+                    <div class="mockup-screen queue-screen">
+                      <div class="screen-header">
+                        <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                        <span class="screen-title">hospital-queue.local</span>
+                      </div>
+                      <div class="screen-body">
+                        <div class="token-banner active">
+                          <span class="live-pulse-dot"></span> TOKEN A07 <span>NOW SERVING</span>
+                        </div>
+                        <div class="token-row">Token A08 <span class="badge-waiting">Est. 2m</span></div>
+                        <div class="token-row">Token A09 <span class="badge-waiting">Est. 6m</span></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- BACK: DEMO & GITHUB LINK BUTTONS -->
+                  <div class="image-flip-back">
+                    <div class="flip-back-card">
+                      <h4>SMART QUEUE LINKS</h4>
+                      <p>Access live deployment or review source code on GitHub</p>
+                      <div class="image-card-buttons">
+                        <a class="primary-btn magnetic" href="https://hospitalq.onrender.com" target="_blank" rel="noreferrer">🚀 Open Live Demo</a>
+                        <a class="glass-btn magnetic" href="https://github.com/jeromeofficial07/hospitalQ" target="_blank" rel="noreferrer">🐙 View GitHub</a>
+                      </div>
+                      <span class="flip-reset-hint">Click to flip back to image ↩️</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02 -->
+          <article class="project-card-layout reveal">
+            <div class="project-details-side">
+              <div class="project-meta-row">
+                <span class="project-number">02</span>
+                <span class="project-meta-tag">FULL-STACK APP</span>
+              </div>
+              <h3>CAMPUS VOTE</h3>
+              <p class="project-subtitle">Student Election Management System</p>
+
+              <div class="project-details-grid">
+                <div class="detail-box">
+                  <strong>Problem</strong>
+                  <p>Manual paper balloting in campus elections is slow, vulnerable to errors, and difficult to audit.</p>
+                </div>
+                <div class="detail-box">
+                  <strong>Solution</strong>
+                  <p>A secure digital voting platform with voter authentication and real-time automated result tallying.</p>
+                </div>
+                <div class="detail-box">
+                  <strong>Key Features</strong>
+                  <p>Secure student login, single-vote enforcement, candidate profiles, and live results visualization dashboard.</p>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span>React</span>
+                <span>Python</span>
+                <span>Flask</span>
+                <span>SQLAlchemy</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+              </div>
+              <div class="project-impact-box">
+                <span class="impact-label">🛡️ Key Impact:</span>
+                <span>Ensured 100% auditable digital tallying with zero duplicate votes via session tokens and tamper-resistant logging.</span>
+              </div>
+            </div>
+
+            <!-- PROJECT IMAGE CARD WITH FLIP DEMO BUTTON -->
+            <div class="project-image-side">
+              <div class="image-flip-card" tabindex="0" role="button" aria-label="Click image to reveal demo links for Campus Vote">
+                <div class="image-flip-inner">
+                  <!-- FRONT: PROJECT SCREENSHOT / IMAGE -->
+                  <div class="image-flip-front">
+                    <div class="image-overlay">
+                      <span class="flip-click-hint">Click Image to Open Links 🔄</span>
+                    </div>
+                    <div class="mockup-screen vote-screen">
+                      <div class="screen-header">
+                        <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                        <span class="screen-title">campus-vote.local</span>
+                      </div>
+                      <div class="screen-body">
+                        <div class="vote-result-row">
+                          <span>Candidate A</span><strong class="vote-count">68% (420 votes)</strong>
+                        </div>
+                        <div class="bar-fill" style="--percent: 68%;"></div>
+                        <div class="vote-result-row">
+                          <span>Candidate B</span><strong class="vote-count">32% (198 votes)</strong>
+                        </div>
+                        <div class="bar-fill" style="--percent: 32%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- BACK: DEMO & GITHUB LINK BUTTONS -->
+                  <div class="image-flip-back">
+                    <div class="flip-back-card">
+                      <h4>CAMPUS VOTE LINKS</h4>
+                      <p>Access live deployment or review source code on GitHub</p>
+                      <div class="image-card-buttons">
+                        <a class="primary-btn magnetic" href="https://campus-vote-xcmp.onrender.com/" target="_blank" rel="noreferrer">🚀 Open Live Demo</a>
+                        <a class="glass-btn magnetic" href="https://github.com/jeromeofficial07/Campus-vote" target="_blank" rel="noreferrer">🐙 View GitHub</a>
+                      </div>
+                      <span class="flip-reset-hint">Click to flip back to image ↩️</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03 -->
+          <article class="project-card-layout reveal">
+            <div class="project-details-side">
+              <div class="project-meta-row">
+                <span class="project-number">03</span>
+                <span class="project-meta-tag">E-COMMERCE</span>
+              </div>
+              <h3>AURA PERFUMES</h3>
+              <p class="project-subtitle">E-Commerce Platform</p>
+
+              <div class="project-details-grid">
+                <div class="detail-box">
+                  <strong>Problem</strong>
+                  <p>Niche fragrance brands need an elegant, high-converting digital storefront with seamless checkout.</p>
+                </div>
+                <div class="detail-box">
+                  <strong>Solution</strong>
+                  <p>A modern e-commerce web application featuring product filtration, interactive cart, and order management.</p>
+                </div>
+                <div class="detail-box">
+                  <strong>Key Features</strong>
+                  <p>Dynamic product catalog, interactive cart management, search filtering, and responsive mobile layout.</p>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>Flask</span>
+                <span>CSS Grid</span>
+                <span>REST API</span>
+              </div>
+              <div class="project-impact-box">
+                <span class="impact-label">⚡ Key Impact:</span>
+                <span>Sub-second instant client-side catalog filtering with local storage persistent cart and dynamic checkout flow.</span>
+              </div>
+            </div>
+
+            <!-- PROJECT IMAGE CARD WITH FLIP DEMO BUTTON -->
+            <div class="project-image-side">
+              <div class="image-flip-card" tabindex="0" role="button" aria-label="Click image to reveal demo links for Aura Perfumes">
+                <div class="image-flip-inner">
+                  <!-- FRONT: PROJECT SCREENSHOT / IMAGE -->
+                  <div class="image-flip-front">
+                    <div class="image-overlay">
+                      <span class="flip-click-hint">Click Image to Open Links 🔄</span>
+                    </div>
+                    <div class="mockup-screen shop-screen">
+                      <div class="screen-header">
+                        <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                        <span class="screen-title">aura-perfumes.local</span>
+                      </div>
+                      <div class="screen-body">
+                        <div class="product-item">
+                          <span>✨ Velvet Oud</span> <strong>$120</strong> <span class="stock-badge in-stock">In Stock</span>
+                        </div>
+                        <div class="product-item">
+                          <span>🌿 Citrus Breeze</span> <strong>$95</strong> <span class="stock-badge hot">Trending</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- BACK: DEMO & GITHUB LINK BUTTONS -->
+                  <div class="image-flip-back">
+                    <div class="flip-back-card">
+                      <h4>AURA PERFUMES LINKS</h4>
+                      <p>Access live deployment or review source code on GitHub</p>
+                      <div class="image-card-buttons">
+                        <a class="primary-btn magnetic" href="auraperfume.onrender.com" target="_blank" rel="noreferrer">🚀 Open Live Demo</a>
+                        <a class="glass-btn magnetic" href="https://github.com/jeromeofficial07/perfume" target="_blank" rel="noreferrer">🐙 View GitHub</a>
+                      </div>
+                      <span class="flip-reset-hint">Click to flip back to image ↩️</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- PANEL 5: LIGHT CANVAS CROSS SECTION (HOW I BUILD) -->
+    <div class="panel panel--light">
+      <section class="section process-section" id="process">
+        <div class="section-header reveal">
+          <span class="section-tag">ENGINEERING METHODOLOGY</span>
+          <h2>HOW I BUILD</h2>
+          <p class="section-subtitle-tagline">Research. Architect. Build. Validate. Deploy. Improve.</p>
+          <p class="section-lead-text">
+            I approach development as an end-to-end process rather than simply writing code. I understand the problem, research possible solutions, plan the system, build with purpose, validate real-world scenarios, deploy to production, and continuously improve the product.
+          </p>
+        </div>
+
+        <!-- 7-STEP PROCESS PIPELINE GRID -->
+        <div class="process-grid">
+          <!-- Step 1 -->
+          <div class="process-card reveal">
+            <div class="process-card-top">
+              <span class="process-step-num">01</span>
+              <span class="process-step-badge">DISCOVER</span>
+            </div>
+            <h3 class="process-step-title">Understand before I build.</h3>
+            <p class="process-step-desc">
+              I begin by understanding the problem, users, requirements, and constraints. I research existing solutions, identify the core functionality, and define clear goals before making technical decisions.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-card reveal">
+            <div class="process-card-top">
+              <span class="process-step-num">02</span>
+              <span class="process-step-badge">ARCHITECT</span>
+            </div>
+            <h3 class="process-step-title">Plan the system.</h3>
+            <p class="process-step-desc">
+              I break the application into clear frontend, backend, database, and API layers. I consider data flow, authentication, business logic, and technology choices to create a structured foundation for development.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-card reveal">
+            <div class="process-card-top">
+              <span class="process-step-num">03</span>
+              <span class="process-step-badge">DESIGN</span>
+            </div>
+            <h3 class="process-step-title">Shape the experience.</h3>
+            <p class="process-step-desc">
+              I design interfaces around clarity, usability, and responsiveness. I consider information hierarchy, user flows, accessibility, loading states, error states, and different screen sizes to create a consistent experience.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-card reveal">
+            <div class="process-card-top">
+              <span class="process-step-num">04</span>
+              <span class="process-step-badge">DEVELOP</span>
+            </div>
+            <h3 class="process-step-title">Turn ideas into working products.</h3>
+            <p class="process-step-desc">
+              I build the application in structured layers, implementing frontend interfaces, backend logic, APIs, database operations, authentication, validation, and error handling while keeping the code organized and maintainable.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="process-card reveal">
+            <div class="process-card-top">
+              <span class="process-step-num">05</span>
+              <span class="process-step-badge">TEST & REFINE</span>
+            </div>
+            <h3 class="process-step-title">Break it before users do.</h3>
+            <p class="process-step-desc">
+              I test normal workflows as well as edge cases and failure scenarios. I verify functionality, API behavior, validation, permissions, responsiveness, and performance, then refine the application based on what I discover.
+            </p>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="process-card reveal">
+            <div class="process-card-top">
+              <span class="process-step-num">06</span>
+              <span class="process-step-badge">DEPLOY</span>
+            </div>
+            <h3 class="process-step-title">Take it beyond localhost.</h3>
+            <p class="process-step-desc">
+              I deploy applications to production environments and verify that they work reliably outside development. I work with production configuration, databases, environment variables, hosting, logs, and deployment issues.
+            </p>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="process-card process-card--featured reveal">
+            <div class="process-card-top">
+              <span class="process-step-num">07</span>
+              <span class="process-step-badge">ITERATE</span>
+            </div>
+            <h3 class="process-step-title">Build. Learn. Improve.</h3>
+            <p class="process-step-desc">
+              Deployment is not the end of development. I use feedback, real-world behavior, and technical observations to identify improvements, fix issues, refine the experience, and continuously evolve the product.
+            </p>
+          </div>
+        </div>
+
+        <!-- DEVELOPMENT PRINCIPLES SUB-SECTION -->
+        <div class="principles-container reveal">
+          <div class="principles-header">
+            <span class="section-tag">CORE PHILOSOPHY</span>
+            <h3 class="principles-title">DEVELOPMENT PRINCIPLES</h3>
+          </div>
+
+          <div class="principles-grid">
+            <div class="principle-card reveal">
+              <div class="principle-icon">🎯</div>
+              <div class="principle-info">
+                <h4>Problem First</h4>
+                <p>Understand the problem before choosing the technology.</p>
+              </div>
+            </div>
+
+            <div class="principle-card reveal">
+              <div class="principle-icon">✨</div>
+              <div class="principle-info">
+                <h4>Simple by Default</h4>
+                <p>Avoid unnecessary complexity when a simpler solution works.</p>
+              </div>
+            </div>
+
+            <div class="principle-card reveal">
+              <div class="principle-icon">👥</div>
+              <div class="principle-info">
+                <h4>User Focused</h4>
+                <p>Build experiences that are clear, useful, and intuitive.</p>
+              </div>
+            </div>
+
+            <div class="principle-card reveal">
+              <div class="principle-icon">🛡️</div>
+              <div class="principle-info">
+                <h4>Reliable Systems</h4>
+                <p>Treat validation, error handling, and edge cases as part of development.</p>
+              </div>
+            </div>
+
+            <div class="principle-card reveal">
+              <div class="principle-icon">🚀</div>
+              <div class="principle-info">
+                <h4>Production Mindset</h4>
+                <p>Consider how an application behaves beyond the local environment.</p>
+              </div>
+            </div>
+
+            <div class="principle-card reveal">
+              <div class="principle-icon">🔄</div>
+              <div class="principle-info">
+                <h4>Continuous Improvement</h4>
+                <p>Keep learning from real usage and improve what has already been built.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PANEL 6: DARK CANVAS CROSS SECTION (EXPERIENCE & EDUCATION & CONTACT) -->
+    <div class="panel panel--dark">
+      <section class="section experience-section" id="experience">
+        <div class="section-header reveal">
+          <span class="section-tag">CAREER</span>
+          <h2>EXPERIENCE</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- EXPERIENCE 1: ORVIONAR TECH -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">♟️</div>
+            <div class="timeline-content">
+              <div class="role-header">
+                <div>
+                  <h3>Full Stack Developer Intern</h3>
+                  <p class="company">Orvionar Tech Pvt Ltd <span class="role-location">• Tiruchirappalli, India</span></p>
+                </div>
+                <span class="duration">Jun 2026 — Aug 2026</span>
+              </div>
+              <ul class="role-points">
+                <li>Developed responsive, cross-device user interfaces using HTML5, CSS3, JavaScript, and React components.</li>
+                <li>Engineered robust backend RESTful APIs using Python (Flask) with request validation, session management, and clean error handling.</li>
+                <li>Designed and managed relational databases with MySQL, optimizing SQL queries, indexes, and schema structures.</li>
+                <li>Tested and documented endpoints with Postman, ensuring high performance, security, and low API latency.</li>
+                <li>Collaborated in an agile team workflow using Git and GitHub for version control, branching, and code reviews.</li>
+              </ul>
+              <div class="role-tech-chips">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>React</span>
+                <span>MySQL</span>
+                <span>REST API</span>
+                <span>Git</span>
+                <span>Postman</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE 2: INAMIGOS FOUNDATION -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">♞</div>
+            <div class="timeline-content">
+              <div class="role-header">
+                <div>
+                  <h3>Web Development Intern</h3>
+                  <p class="company">InAmigos Foundation <span class="role-location">• Remote</span></p>
+                </div>
+                <span class="duration">Sep 2026 — Present</span>
+              </div>
+              <ul class="role-points">
+                <li>Building interactive web platform features and incorporating AI-assisted tooling into development workflows.</li>
+                <li>Crafting accessible, modern UI components to streamline user navigation and conversion journeys.</li>
+                <li>Collaborating on web architecture enhancements and participating in strategic feature rollouts.</li>
+              </ul>
+              <div class="role-tech-chips">
+                <span>JavaScript</span>
+                <span>HTML5 / CSS3</span>
+                <span>AI Tools</span>
+                <span>Web UX</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION & CERTIFICATIONS & CONTACT -->
+      <section class="section education-section" id="education">
+        <div class="section-header reveal">
+          <span class="section-tag">ACADEMIC & CREDENTIALS</span>
+          <h2>EDUCATION & CERTIFICATIONS</h2>
+        </div>
+
+        <div class="education-grid">
+          <!-- EDUCATION CARD 1: COLLEGE -->
+          <div class="education-card reveal">
+            <div class="edu-top-row">
+              <div class="edu-badge">🎓</div>
+              <span class="edu-duration">2024 — 2027</span>
+            </div>
+            <div class="edu-details">
+              <h3>Bachelor of Science in Computer Science</h3>
+              <p class="college">St. Joseph's College (Autonomous), Tiruchirappalli</p>
+              <div class="edu-score-pill">
+                <strong>CGPA: 7.67 / 10</strong>
+                <span>• Currently in 3rd Year</span>
+              </div>
+              <div class="coursework-section">
+                <span class="coursework-title">Key Coursework:</span>
+                <div class="coursework-tags">
+                  <span>Data Structures & Algorithms</span>
+                  <span>DBMS & SQL</span>
+                  <span>OOPs (Python/Java/C++)</span>
+                  <span>Operating Systems</span>
+                  <span>Computer Networks</span>
+                  <span>Web Technologies</span>
+                  <span>Software Engineering</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- EDUCATION CARD 2: SCHOOL -->
+          <div class="education-card reveal">
+            <div class="edu-top-row">
+              <div class="edu-badge">🏫</div>
+              <span class="edu-duration">HSC (12th Standard)</span>
+            </div>
+            <div class="edu-details">
+              <h3>Higher Secondary Education</h3>
+              <p class="college">Little Flower Higher Secondary School</p>
+              <div class="edu-score-pill">
+                <strong>Score: 74%</strong>
+                <span>• Science & Mathematics</span>
+              </div>
+              <p class="edu-note">Built strong mathematical reasoning and analytical foundations for computer science.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CERTIFICATIONS SUBSECTION -->
+        <div class="certs-section reveal">
+          <h3 class="certs-heading">🎖️ Verified Certifications</h3>
+          <div class="certs-grid">
+            <!-- CERT 1: ORVIONAR -->
+            <div class="cert-card">
+              <div class="cert-header">
+                <span class="cert-icon">🏢</span>
+                <span class="cert-badge verified">Verified Internship</span>
+              </div>
+              <h4>Full Stack Developer Internship Certificate</h4>
+              <p class="cert-issuer">Orvionar Tech Pvt. Ltd. • 2026</p>
+              <p class="cert-desc">Certified practical experience in building full-stack applications with Flask, React, and MySQL database engineering.</p>
+            </div>
+
+            <!-- CERT 2: NPTEL DBMS -->
+            <div class="cert-card">
+              <div class="cert-header">
+                <span class="cert-icon">📜</span>
+                <span class="cert-badge nptel">NPTEL / SWAYAM</span>
+              </div>
+              <h4>Database Management System (DBMS)</h4>
+              <p class="cert-issuer">NPTEL (IIT Course) • 2027</p>
+              <p class="cert-desc">In-depth validation of relational database concepts, SQL query optimization, ER modeling, indexing, and transactional concurrency.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GET IN TOUCH SECTION (FEATURING 1-CLICK ACTIONS, PHONE, WHATSAPP, EMAIL, LINKEDIN, GITHUB) -->
+      <section class="section contact-section" id="contact">
+        <div class="contact-card reveal">
+          <span class="section-tag">GET IN TOUCH</span>
+          <h2>Let's build something impactful.</h2>
+          <p class="contact-tagline">
+            I am actively seeking <strong>Full-Stack Developer</strong> and <strong>Backend/Frontend roles</strong>. Open to immediate hiring, summer/fall opportunities, and remote or on-site positions.
+          </p>
+
+          <!-- RECRUITER DIRECT CONTACT ACTION BAR -->
+          <div class="recruiter-contact-bar">
+            <!-- 1-CLICK COPY EMAIL -->
+            <button class="action-pill-btn copy-email-btn magnetic" id="copyEmailContactBtn" onclick="copyEmailToClipboard(this)" title="Click to copy email address">
+              <span class="action-icon">📋</span>
+              <span class="btn-text">Copy Email: jeromeofficial07@gmail.com</span>
+            </button>
+          </div>
+
+          <!-- OFFICIAL BRAND LOGO BUTTONS -->
+          <div class="contact-buttons">
+            <!-- GMAIL -->
+            <a class="contact-brand-btn gmail-btn magnetic" href="mailto:jeromeofficial07@gmail.com" title="Send Email via Gmail">
+              <svg class="brand-svg" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#4285F4" d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm-8 7l-8-5v10h16V8l-8 5z"/>
+              </svg>
+              <span>Email Direct</span>
+            </a>
+
+            <!-- LINKEDIN -->
+            <a class="contact-brand-btn linkedin-btn magnetic" href="https://www.linkedin.com/in/arputha-jerome/" target="_blank" rel="noreferrer" title="LinkedIn Profile">
+              <svg class="brand-svg" width="24" height="24" viewBox="0 0 24 24" fill="#0A66C2" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <!-- GITHUB -->
+            <a class="contact-brand-btn github-btn magnetic" href="https://github.com/jeromeofficial07" target="_blank" rel="noreferrer" title="GitHub Profile">
+              <svg class="brand-svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <!-- RESUME -->
+            <a class="contact-brand-btn resume-brand-btn magnetic" href="resume.html" target="_blank" title="View & Download Resume">
+              <svg class="brand-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+              <span>View Resume ↗</span>
+            </a>
+          </div>
+
+          <!-- LOCATION & PREFERENCES FOOTNOTE -->
+          <div class="contact-location-info">
+            <span class="loc-badge">📍 Location: Karaikudi / Tiruchirappalli, Tamil Nadu</span>
+            <span class="loc-pref">🚀 Willing to relocate to Chennai, Bengaluru, or work remotely worldwide.</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2026 A. Arputha Jerome. Built with precision and passion.</p>
+      <a href="#hero" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset=UTF-8>
+  <meta name=viewport content=width=device-width, initial-scale=1.0>
+  <meta name=description content=Resume of A. Arputha Jerome - Aspiring Python Full-Stack Developer>
+  <title>Resume | A. Arputha Jerome</title>
+  <link rel=preconnect href=https://fonts.googleapis.com>
+  <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+  <link href=https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@600;700;800;900&display=swap rel=stylesheet>
+  <link rel=stylesheet href=styles.css>
+  <style>
+    .resume-page {
+      min-height: 100vh;
+      background: #140d06;
+      color: #FBF5ED;
+      display: flex;
+      flex-direction: column;
+    }
+    .resume-header {
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(28, 19, 10, 0.92);
+      border-bottom: 1px solid rgba(201, 151, 79, 0.25);
+      backdrop-filter: blur(14px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .resume-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-family: var(--font-primary);
+      font-weight: 800;
+      color: #FBF5ED;
+      text-decoration: none;
+    }
+    .resume-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+    .resume-container {
+      flex: 1;
+      max-width: 1100px;
+      width: 100%;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .resume-embed-box {
+      width: 100%;
+      height: 82vh;
+      min-height: 650px;
+      border-radius: 18px;
+      border: 1.5px solid rgba(201, 151, 79, 0.35);
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+      background: #1c1108;
+    }
+    .resume-embed-box iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+    .resume-fallback {
+      padding: 3rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body class=resume-page>
+  <header class=resume-header>
+    <a class=resume-brand href=index.html>
+      <span class=brand-mark>J</span>
+      <span>A. ARPUTHA JEROME • RESUME</span>
+    </a>
+
+    <div class=resume-actions>
+      <a class=glass-btn magnetic href=index.html>← Back to Portfolio</a>
+      <a class=primary-btn magnetic href=assets/resume.pdf download=Arputha_Jerome_Resume.pdf target=_blank>
+        <span>⬇ Download PDF</span>
+      </a>
+    </div>
+  </header>
+
+  <main class=resume-container>
+    <div class=resume-embed-box>
+      <iframe src=assets/resume.pdf#toolbar=1&navpanes=0&scrollbar=1 type=application/pdf title=A. Arputha Jerome Resume>
+        <div class=resume-fallback>
+          <h3>Resume PDF Preview</h3>
+          <p>Your browser doesn't support inline PDF preview. You can download the resume directly below:</p>
+          <a class=primary-btn href=assets/resume.pdf download=Arputha_Jerome_Resume.pdf>Download Resume (PDF)</a>
+        </div>
+      </iframe>
+    </div>
+  </main>
+</body>
+</html>
